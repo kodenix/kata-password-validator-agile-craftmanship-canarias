@@ -18,4 +18,10 @@ describe("Password kata", () => {
 
     expect(result).toBe(false)
   })
+
+  it.each(["", "1234567"])("should be false when the length is not atleast 8 characters", (password) => {
+    const result = isValid(password)
+
+    expect(result).toBe(false)
+  })
 })
