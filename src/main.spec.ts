@@ -1,9 +1,9 @@
-import { describe, it, expect } from "vitest"
-import { myFunction } from "./main.js"
+import { describe, expect, it } from "vitest"
+import { isValid } from "./main.js"
 
-describe("Default test", () => {
-  it("should work", () => {
-    const result = myFunction()
+describe("Password kata", () => {
+  it("should validate when the length is atleast 8 characters", () => {
+    const result = isValid("12345678")
 
     expect(result).toBe(true)
   })
