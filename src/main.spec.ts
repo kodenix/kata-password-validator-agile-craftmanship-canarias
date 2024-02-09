@@ -12,4 +12,10 @@ describe("Password kata", () => {
 
     expect(result).toBe(false)
   })
+
+  it("should be false when the length is not atleast 8 characters", () => {
+    const result = isValid("1234567")
+
+    expect(result).toBe(false)
+  })
 })
