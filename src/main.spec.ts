@@ -13,4 +13,10 @@ describe("Password kata", () => {
 
     expect(result).toBe(false)
   })
+
+  it("should be false when there is not uppercase character included", () => {
+    const result = isValid("a2345678")
+
+    expect(result).toBe(false)
+  })
 })
